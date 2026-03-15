@@ -1,18 +1,19 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { ciudades, EMPRESA } from '../data/index';
+import { siteConfig } from '../config/site';
 
 const title       = `Sobre nosotros | ${EMPRESA.nombre}`;
 const description = `Conoce la historia y valores de ${EMPRESA.nombreLegal}. Especialistas en vaciado de pisos y locales en ${ciudades[0].nombre} y toda la provincia de ${ciudades[0].provincia}.`;
 
 const ciudad     = ciudades[0].nombre;
 const provincia  = ciudades[0].provincia;
-const comarca    = 'el Vallès Occidental';
+const comarca    = siteConfig.comarca;
 const otrosMunicipios = ciudades.slice(1).map(c => c.nombre).join(', ');
 
 const hitos = [
   {
-    año: '2014',
+    año: siteConfig.foundingYear,
     titulo: `Los comienzos en ${ciudad}`,
     texto: `Fundamos la empresa en ${ciudad} con un único objetivo: ofrecer un servicio de vaciado honesto, sin sorpresas en la factura y con gestión de residuos responsable. Empezamos con un equipo de tres personas y el boca a boca como única publicidad.`,
   },
@@ -103,7 +104,7 @@ const equipo = [
     <div class="container page-hero-inner">
       <div class="page-hero-text">
         <span class="eyebrow">Quiénes somos</span>
-        <h1>Especialistas en vaciados en {ciudad} desde 2014</h1>
+        <h1>Especialistas en vaciados en {ciudad} desde {siteConfig.foundingYear}</h1>
         <p>
           Somos <strong>{EMPRESA.nombreLegal}</strong>, empresa local de {ciudad} especializada
           en vaciado de pisos, locales y recogida de muebles en {comarca} y toda la provincia
@@ -296,7 +297,7 @@ const equipo = [
   ════════════════════════════════════════════════════════ */
   .page-hero {
     margin-top: var(--header-h);
-    background: linear-gradient(140deg, #0b1629 0%, #0f2d6b 60%, #1e40af 100%);
+    background: var(--c-hero-gradient);
     padding-block: 5rem 0;
     overflow: hidden;
     position: relative;

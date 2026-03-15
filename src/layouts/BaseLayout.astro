@@ -56,6 +56,9 @@ const navLinks = [
         --c-primary-l: color-mix(in srgb, ${siteConfig.colorPrimary}  8%, #fff);
         --c-text:      ${siteConfig.colorText};
         --c-bg-dark:   color-mix(in srgb, ${siteConfig.colorText} 95%, #000);
+        --c-hero-from: color-mix(in srgb, ${siteConfig.colorPrimary} 12%, #000);
+        --c-hero-mid:  color-mix(in srgb, ${siteConfig.colorPrimary} 22%, #000);
+        --c-hero-gradient: linear-gradient(150deg, var(--c-hero-from) 0%, var(--c-hero-mid) 50%, ${siteConfig.colorPrimary} 100%);
       }
     `} />
   </head>

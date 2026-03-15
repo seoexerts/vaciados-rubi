@@ -14,9 +14,11 @@ export const siteConfig = {
   logo:  '/logo.png',
 
   // ── Servicio y área ────────────────────────────────────
-  serviceType: 'Vaciado de pisos y locales',
-  area:        'Todo Rubí, municipios cercanos y comarca.',
-  mainCity:    'Rubí',
+  serviceType:  'Vaciado de pisos y locales',
+  area:         'Todo Rubí, municipios cercanos y comarca.',
+  mainCity:     'Rubí',
+  comarca:      'el Vallès Occidental',
+  foundingYear: '2014',
 
   // ── Contacto ──────────────────────────────────────────
   phone:    '+34 633 75 96 49',
