@@ -12,5 +12,7 @@
     "Centre", "Gràcia", "Can Rull", "La Creu Alta", "Torre-romeu",
     "Terrassa", "Badia del Vallès", "Barberà del Vallès", "Cerdanyola del Vallès"
   ],
+  "seoIntro": "Sabadell es la capital del Vallès Occidental con más de 215.000 habitantes. Prestamos servicio de vaciado en sus barrios: Centre, Gràcia, Can Rull, La Creu Alta, Torre-romeu y toda la ciudad. También cubrimos Badia del Vallès y Barberà del Vallès.",
+  "metaDesc": "Vaciado de pisos y locales en Sabadell — equipo propio, precio cerrado y gestión de residuos certificada. Presupuesto gratuito en menos de 24 h.",
   "serviciosActivos": ["vaciado-pisos", "vaciado-locales", "recogida-muebles"]
 }

@@ -55,6 +55,8 @@ export interface Ciudad {
   codigoPostal: string;
   zonas: string[];
   servicios: ServicioResuelto[];
+  seoIntro: string;
+  metaDesc: string;
 }
 
 // ── Interpolación de variables ────────────────────────────────────────────────
@@ -98,6 +100,8 @@ export const ciudades: Ciudad[] = rawCiudades.map((raw) => {
     codigoPostal: raw.codigoPostal,
     zonas: raw.zonas,
     servicios: serviciosResueltos,
+    seoIntro: (raw as any).seoIntro ?? '',
+    metaDesc: (raw as any).metaDesc ?? '',
   };
 });
 

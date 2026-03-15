@@ -12,5 +12,7 @@
     "Centre", "Can Torrella", "Can Rosal",
     "Terrassa", "Vacarisses", "Castellar del Vallès"
   ],
+  "seoIntro": "Matadepera es un municipio del Vallès Occidental conocido por su entorno natural junto al Parc de Sant Llorenç del Munt. Cubrimos el Centre, Can Torrella y Can Rosal, con servicio también en las zonas limítrofes con Terrassa y Castellar del Vallès.",
+  "metaDesc": "Vaciado de pisos y locales en Matadepera — equipo propio, presupuesto gratuito en 24 h y gestión de residuos certificada en el Vallès Occidental.",
   "serviciosActivos": ["vaciado-pisos", "vaciado-locales", "recogida-muebles"]
 }
