@@ -1,0 +1,43 @@
+{
+  "slug": "rubi",
+  "nombre": "Rubí",
+  "provincia": "Barcelona",
+  "lat": 41.49266858774774,
+  "lng": 2.0272924937114922,
+  "telefono": "+34 633 75 96 49",
+  "email": "seoexpertsslu@gmail.com",
+  "direccion": "Carrer de Pau Casals, 10, ",
+  "codigoPostal": "08191 ",
+  "zonas": [
+    "Avets",
+    "la Bastida",
+    "Ca n'Alsamora",
+    "Can Barceló",
+    "Can Bosc",
+    "Can Jardí",
+    "Can Mir",
+    "Can Pi de Vilaroc",
+    "Can Rosers (polígono)",
+    "Can Rosers (urbanización)",
+    "Can Serrafossa",
+    "Can Solà",
+    "Can Vallhonrat",
+    "Cova-solera",
+    "la Llana",
+    "la Perla del Vallès",
+    "el Pinar",
+    "Rubí (nucli urbà)",
+    "Sant Genís",
+    "Sant Muç",
+    "Vallès Parc",
+    "Ximelis."
+  ],
+  "serviciosActivos": [
+    "vaciado-pisos",
+    "vaciado-locales",
+    "recogida-muebles",
+    "limpieza-diogenes",
+    "limpieza-post-vaciado",
+    "pintura-express"
+  ]
+}
