@@ -24,7 +24,7 @@ import ullastrellRaw    from './ciudades/ullastrell.json';
 import castellbisbalRaw from './ciudades/castellbisbal.json';
 
 const rawCiudades = [
-  terrassaRaw, rubiRaw, sabadellRaw, santQuirzeRaw,
+  rubiRaw, terrassaRaw, sabadellRaw, santQuirzeRaw,
   viladecavallsRaw, matadeperaRaw, ullastrellRaw, castellbisbalRaw,
 ];
 // ─────────────────────────────────────────────────────────────────────────────
