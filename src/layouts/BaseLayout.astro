@@ -86,7 +86,8 @@ const navLinks = [
         </nav>
 
         <a href="/contacto" class="btn btn-sm btn-cta-header">
-          📋 PRESUPUESTO GRATIS
+          <span class="cta-full">📋 PRESUPUESTO GRATIS</span>
+          <span class="cta-short">PRESUPUESTO</span>
         </a>
 
         <button
@@ -415,6 +416,7 @@ const navLinks = [
     align-items: center;
     gap: 1.5rem;
     height: 100%;
+    overflow: hidden;
   }
 
   .brand {
@@ -518,9 +520,31 @@ const navLinks = [
   /* ══════════════════════════════════════════════════════════
      MOBILE — nav desplegable
   ══════════════════════════════════════════════════════════ */
+  /* Mostrar/ocultar texto CTA según pantalla */
+  .cta-short { display: none; }
+  .cta-full  { display: inline; }
+
   @media (max-width: 768px) {
     .site-header .btn-sm:not(.btn-cta-header) { display: none; }
-    .btn-cta-header { font-size: .72rem; padding: .45rem .9rem; }
+
+    /* Header móvil: logo | flex-space | CTA corto | hamburger */
+    .header-inner { gap: .5rem; overflow: visible; }
+    .brand { flex: 1; min-width: 0; }
+    .brand-name {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .btn-cta-header {
+      font-size: .72rem;
+      padding: .4rem .75rem;
+      flex-shrink: 0;
+      white-space: nowrap;
+      animation: none;
+    }
+    .cta-full  { display: none; }
+    .cta-short { display: inline; }
 
     .main-nav {
       display: none;
