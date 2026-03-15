@@ -78,7 +78,7 @@ const description = `Contacta con ${EMPRESA.nombre}. Solicita tu presupuesto gra
                 <span class="office-province">{ciudad.provincia}</span>
               </div>
               <address>
-                <p>{ciudad.direccion}, {ciudad.codigoPostal}</p>
+                <p>{ciudad.direccion}, {ciudad.codigoPostal} {ciudad.nombre}</p>
                 <p>
                   <a href={`tel:${ciudad.telefono.replace(/\s/g, '')}`}>
                     {ciudad.telefono}
