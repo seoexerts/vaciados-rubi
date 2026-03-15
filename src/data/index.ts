@@ -100,8 +100,8 @@ export const ciudades: Ciudad[] = rawCiudades.map((raw) => {
     codigoPostal: raw.codigoPostal,
     zonas: raw.zonas,
     servicios: serviciosResueltos,
-    seoIntro: (raw as any).seoIntro ?? '',
-    metaDesc: (raw as any).metaDesc ?? '',
+    seoIntro: interpolate((raw as any).seoIntro ?? '', vars),
+    metaDesc: interpolate((raw as any).metaDesc ?? '', vars),
   };
 });
 
