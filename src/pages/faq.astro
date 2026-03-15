@@ -1,11 +1,15 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import FAQSchema from '../components/FAQSchema.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
 import { ciudades, EMPRESA } from '../data/index';
+import { siteConfig } from '../config/site';
 
 const title       = `Preguntas frecuentes | ${EMPRESA.nombre}`;
 const description = `Resolvemos las dudas más habituales sobre nuestros servicios en ${ciudades.map(c=>c.nombre).join(', ')}: presupuesto, plazos, garantía y zonas de cobertura.`;
 
-const ciudad = ciudades[0].nombre;
+const ciudad   = ciudades[0].nombre;
+const canonical = `${siteConfig.web}/faq/`;
 
 const faqs = [
   {
@@ -43,7 +47,15 @@ const faqs = [
 ];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <FAQSchema faqs={faqs} slot="head" />
+  <BreadcrumbSchema
+    items={[
+      { name: 'Inicio',               url: `${siteConfig.web}/` },
+      { name: 'Preguntas frecuentes', url: canonical },
+    ]}
+    slot="head"
+  />
 
   <div class="page-header">
     <div class="container">

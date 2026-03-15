@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
 import { ciudades, EMPRESA } from '../data/index';
 import { siteConfig } from '../config/site';
 
+const canonical   = `${siteConfig.web}/sobre-nosotros/`;
 const title       = `Sobre nosotros | ${EMPRESA.nombre}`;
 const description = `Conoce la historia y valores de ${EMPRESA.nombreLegal}. Especialistas en vaciado de pisos y locales en ${ciudades[0].nombre} y toda la provincia de ${ciudades[0].provincia}.`;
 
@@ -97,7 +99,14 @@ const equipo = [
 ];
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <BreadcrumbSchema
+    items={[
+      { name: 'Inicio',         url: `${siteConfig.web}/` },
+      { name: 'Sobre nosotros', url: canonical },
+    ]}
+    slot="head"
+  />
 
   <!-- ── Page header ──────────────────────────────────── -->
   <header class="page-hero">

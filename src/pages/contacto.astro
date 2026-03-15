@@ -1,13 +1,23 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import BreadcrumbSchema from '../components/BreadcrumbSchema.astro';
 import { ciudades, EMPRESA } from '../data/index';
 import { servicios as catalogoServicios } from '../data/servicios';
+import { siteConfig } from '../config/site';
 
+const canonical   = `${siteConfig.web}/contacto/`;
 const title       = `Contacto | ${EMPRESA.nombre}`;
 const description = `Contacta con ${EMPRESA.nombre}. Solicita tu presupuesto gratuito en ${ciudades.map(c => c.nombre).join(', ')}. Respondemos en menos de 24 horas laborables.`;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} canonical={canonical}>
+  <BreadcrumbSchema
+    items={[
+      { name: 'Inicio',   url: `${siteConfig.web}/` },
+      { name: 'Contacto', url: canonical },
+    ]}
+    slot="head"
+  />
 
   <!-- Page header -->
   <div class="page-header">
