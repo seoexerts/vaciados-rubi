@@ -85,7 +85,9 @@ const navLinks = [
           ))}
         </nav>
 
-        <a href="/contacto" class="btn btn-sm">PRESUPUESTO</a>
+        <a href="/contacto" class="btn btn-sm btn-cta-header">
+          📋 PRESUPUESTO GRATIS
+        </a>
 
         <button
           class="nav-toggle"
@@ -366,6 +368,33 @@ const navLinks = [
   .btn-lg   { font-size: 1rem;   padding: .8rem 1.75rem; }
   .btn-full { width: 100%; justify-content: center; }
 
+  /* ── CTA Header button ── */
+  .btn-cta-header {
+    background: linear-gradient(135deg, #ff6b00 0%, #ff3d00 100%);
+    color: #fff !important;
+    border-color: transparent;
+    font-size: .82rem;
+    font-weight: 700;
+    padding: .55rem 1.25rem;
+    border-radius: 8px;
+    letter-spacing: .03em;
+    box-shadow: 0 3px 12px rgba(255, 80, 0, .35);
+    transition: transform .15s, box-shadow .15s, filter .15s;
+    white-space: nowrap;
+    animation: ctaPulse 2.4s ease-in-out infinite;
+  }
+  .btn-cta-header:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 18px rgba(255, 80, 0, .5);
+    text-decoration: none;
+    animation: none;
+  }
+  @keyframes ctaPulse {
+    0%, 100% { box-shadow: 0 3px 12px rgba(255, 80, 0, .35); }
+    50%       { box-shadow: 0 3px 22px rgba(255, 80, 0, .65); }
+  }
+
   /* ══════════════════════════════════════════════════════════
      HEADER
   ══════════════════════════════════════════════════════════ */
@@ -490,7 +519,8 @@ const navLinks = [
      MOBILE — nav desplegable
   ══════════════════════════════════════════════════════════ */
   @media (max-width: 768px) {
-    .site-header .btn-sm { display: none; }
+    .site-header .btn-sm:not(.btn-cta-header) { display: none; }
+    .btn-cta-header { font-size: .72rem; padding: .45rem .9rem; }
 
     .main-nav {
       display: none;
