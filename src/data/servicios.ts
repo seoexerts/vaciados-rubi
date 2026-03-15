@@ -224,4 +224,187 @@ export const servicios: ServicioBase[] = [
       },
     ],
   },
+
+  {
+    slug: 'limpieza-diogenes',
+    nombre: 'Limpieza síndrome de Diógenes',
+    descripcionCorta:
+      'Limpieza especializada por síndrome de Diógenes en {ciudad}. Actuación discreta, desinfección profunda y recuperación del inmueble. {empresa}.',
+    descripcionLarga:
+      'En {empresa} llevamos a cabo intervenciones especializadas en viviendas afectadas por el síndrome de Diógenes en {ciudad} y la provincia de {provincia}. Actuamos con total discreción y confidencialidad, retirando la acumulación de objetos y residuos orgánicos, desinfectando a fondo y dejando el inmueble en condiciones habitables.',
+    beneficios: [
+      'Actuación totalmente discreta y confidencial en {ciudad}',
+      'Retirada de acumulación de objetos y residuos orgánicos',
+      'Desinfección y desinsectación profunda del inmueble',
+      'Equipo especializado con EPIs y formación específica',
+      'Gestión de residuos certificada según normativa de {provincia}',
+      'Coordinación con servicios sociales o familiares si es necesario',
+    ],
+    proceso: [
+      {
+        titulo: 'Valoración discreta',
+        descripcion:
+          'Visitamos el inmueble en {ciudad} para evaluar el grado de afectación. Toda la gestión es confidencial.',
+      },
+      {
+        titulo: 'Retirada de acumulación',
+        descripcion:
+          'Retiramos objetos, residuos y materiales orgánicos de forma ordenada, clasificando lo que puede donarse o reciclarse.',
+      },
+      {
+        titulo: 'Desinfección profunda',
+        descripcion:
+          'Aplicamos tratamiento de desinfección, desinsectación y eliminación de olores en suelos, paredes, techos y mobiliario que permanezca.',
+      },
+      {
+        titulo: 'Entrega del inmueble',
+        descripcion:
+          'Dejamos la vivienda limpia y en condiciones habitables. Emitimos certificado de gestión de residuos si se requiere.',
+      },
+    ],
+    faqs: [
+      {
+        pregunta: '¿Actuáis con discreción en casos de síndrome de Diógenes en {ciudad}?',
+        respuesta:
+          'Sí. Trabajamos con la máxima confidencialidad. Nuestro equipo acude sin identificación visible y coordinamos el trabajo para minimizar la exposición ante vecinos o terceros.',
+      },
+      {
+        pregunta: '¿Cuánto cuesta una limpieza por síndrome de Diógenes?',
+        respuesta:
+          'El precio depende del grado de acumulación y el tamaño del inmueble. Requiere visita previa para presupuestar correctamente. El presupuesto es gratuito y sin compromiso.',
+      },
+      {
+        pregunta: '¿Podéis coordinarlo con servicios sociales o la familia?',
+        respuesta:
+          'Sí. Trabajamos habitualmente en coordinación con servicios sociales, tutores legales o familiares. Adaptamos los tiempos y el proceso a las necesidades del caso.',
+      },
+      {
+        pregunta: '¿Qué hacéis con los objetos acumulados?',
+        respuesta:
+          'Separamos lo que pueda ser donado o reciclado. Los residuos orgánicos y materiales no recuperables se llevan a gestores autorizados en {provincia}.',
+      },
+    ],
+  },
+
+  {
+    slug: 'limpieza-post-vaciado',
+    nombre: 'Limpieza post vaciado',
+    descripcionCorta:
+      'Limpieza profunda tras el vaciado del inmueble en {ciudad}. Suelos, paredes, cocina y baños a fondo. {empresa}.',
+    descripcionLarga:
+      'Tras el vaciado del inmueble, {empresa} realiza una limpieza profunda en {ciudad} para dejarlo listo para visita, venta o alquiler. Limpiamos suelos, paredes, cocina, baños y cualquier rincón, eliminando polvo, manchas y residuos acumulados. Combinable con el vaciado en un único servicio con precio cerrado.',
+    beneficios: [
+      'Limpieza profunda de suelos, paredes y techos',
+      'Cocina y baños a fondo: azulejos, sanitarios, electrodomésticos',
+      'Eliminación de polvo, manchas, cal y residuos',
+      'Combinable con el vaciado — un servicio, un precio',
+      'Inmueble listo para visita, fotografía, venta o alquiler',
+      'Equipo propio sin subcontratas en {ciudad}',
+    ],
+    proceso: [
+      {
+        titulo: 'Combinado o independiente',
+        descripcion:
+          'Puedes contratar la limpieza post vaciado junto con el vaciado o de forma independiente una vez el inmueble ya está vacío.',
+      },
+      {
+        titulo: 'Limpieza de zonas secas',
+        descripcion:
+          'Barremos y fregamos suelos, limpiamos paredes, ventanas, marcos y puertas, y eliminamos telarañas y polvo acumulado.',
+      },
+      {
+        titulo: 'Cocina y baños',
+        descripcion:
+          'Desengrasamos encimeras, azulejos y electrodomésticos. Limpiamos sanitarios, grifería y desinfectamos baños a fondo.',
+      },
+      {
+        titulo: 'Entrega lista para usar',
+        descripcion:
+          'El inmueble queda limpio y en condiciones óptimas para ser visitado, fotografiado o entregado al nuevo inquilino o comprador.',
+      },
+    ],
+    faqs: [
+      {
+        pregunta: '¿Puedo contratar solo la limpieza sin el vaciado?',
+        respuesta:
+          'Sí. Si el inmueble ya está vacío, podemos realizar únicamente la limpieza post vaciado. Contáctanos con fotos y te damos presupuesto gratuito.',
+      },
+      {
+        pregunta: '¿Cuánto cuesta la limpieza post vaciado en {ciudad}?',
+        respuesta:
+          'El precio depende del tamaño y el estado del inmueble. Un piso estándar suele estar entre 120 € y 250 €. Combinado con el vaciado obtienes un precio más ajustado.',
+      },
+      {
+        pregunta: '¿Quedará listo para fotos inmobiliarias?',
+        respuesta:
+          'Sí. La limpieza post vaciado deja el inmueble en condiciones óptimas para fotografía inmobiliaria, visitas de compradores o entrega de llaves.',
+      },
+      {
+        pregunta: '¿Limpiais también garajes y trasteros?',
+        respuesta:
+          'Sí. Además de viviendas y locales, limpiamos garajes, trasteros y cualquier espacio anexo que necesites dejar en perfectas condiciones en {ciudad}.',
+      },
+    ],
+  },
+
+  {
+    slug: 'pintura-express',
+    nombre: 'Pintura express',
+    descripcionCorta:
+      'Servicio de pintura express en {ciudad} para pisos y locales recién vaciados. Acabado profesional en 24–48 h. {empresa}.',
+    descripcionLarga:
+      'Con el servicio de pintura express de {empresa} en {ciudad}, pintamos pisos y locales recién vaciados en 24–48 horas con acabado profesional. Ideal para rentabilizar el inmueble lo antes posible. Combinable con el vaciado y la limpieza en un único servicio integral con precio cerrado.',
+    beneficios: [
+      'Acabado profesional en 24–48 horas en {ciudad}',
+      'Pintura de paredes y techos con materiales de calidad',
+      'Precio cerrado — sin extras ni sorpresas al finalizar',
+      'Combinable con vaciado y limpieza en un servicio integral',
+      'Inmueble listo para alquilar o vender en tiempo récord',
+      'Equipo propio especializado en pintura de interiores',
+    ],
+    proceso: [
+      {
+        titulo: 'Presupuesto por fotos o visita',
+        descripcion:
+          'Envíanos fotos del inmueble vacío o concertamos una visita en {ciudad}. Te damos precio cerrado en menos de 24 horas.',
+      },
+      {
+        titulo: 'Preparación de superficies',
+        descripcion:
+          'Protegemos suelos, marcos y elementos que no se pintan. Reparamos pequeños desperfectos y aplicamos imprimación si es necesario.',
+      },
+      {
+        titulo: 'Pintura en 24–48 horas',
+        descripcion:
+          'Aplicamos la pintura en dos manos con rodillo profesional. En la mayoría de pisos de {ciudad} terminamos en un solo día de trabajo.',
+      },
+      {
+        titulo: 'Entrega y revisión',
+        descripcion:
+          'Revisamos el acabado contigo y dejamos el inmueble limpio y listo para su uso inmediato.',
+      },
+    ],
+    faqs: [
+      {
+        pregunta: '¿Cuánto cuesta pintar un piso en {ciudad}?',
+        respuesta:
+          'Un piso de 70–90 m² suele costar entre 400 € y 800 € según el estado de las paredes. Pídenos presupuesto gratuito con fotos.',
+      },
+      {
+        pregunta: '¿En cuánto tiempo pintáis un piso?',
+        respuesta:
+          'La mayoría de pisos estándar los pintamos en 1–2 días. Para locales o viviendas grandes, te indicamos el plazo exacto en el presupuesto.',
+      },
+      {
+        pregunta: '¿Incluye la reparación de desperfectos en las paredes?',
+        respuesta:
+          'Incluimos la reparación de pequeños agujeros y grietas superficiales. Para desperfectos estructurales mayores, lo presupuestamos aparte.',
+      },
+      {
+        pregunta: '¿Podéis combinar vaciado, limpieza y pintura?',
+        respuesta:
+          'Sí. Ofrecemos el servicio integral completo: vaciado + limpieza post vaciado + pintura express en {ciudad}, con un único presupuesto cerrado.',
+      },
+    ],
+  },
 ];
