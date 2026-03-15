@@ -64,10 +64,10 @@ const description = `Contacta con ${EMPRESA.nombre}. Solicita tu presupuesto gra
           </div>
         </div>
 
-        <!-- Oficinas por ciudad -->
-        <h3 class="offices-heading">Nuestras oficinas</h3>
+        <!-- Oficina principal -->
+        <h3 class="offices-heading">Nuestra oficina</h3>
         <ul class="office-list">
-          {ciudades.map(ciudad => (
+          {(() => { const ciudad = ciudades[0]; return (
             <li class="office-card">
               <div class="office-card-header">
                 <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true">
@@ -91,7 +91,7 @@ const description = `Contacta con ${EMPRESA.nombre}. Solicita tu presupuesto gra
                 </p>
               </address>
             </li>
-          ))}
+          ); })()}
         </ul>
 
       </aside>

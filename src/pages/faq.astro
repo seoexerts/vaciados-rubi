@@ -5,38 +5,40 @@ import { ciudades, EMPRESA } from '../data/index';
 const title       = `Preguntas frecuentes | ${EMPRESA.nombre}`;
 const description = `Resolvemos las dudas más habituales sobre nuestros servicios en ${ciudades.map(c=>c.nombre).join(', ')}: presupuesto, plazos, garantía y zonas de cobertura.`;
 
+const ciudad = ciudades[0].nombre;
+
 const faqs = [
   {
-    pregunta: '¿En qué ciudades ofrecéis servicio?',
-    respuesta: `Actualmente operamos en ${ciudades.map(c=>c.nombre).join(', ')} y seguimos expandiéndonos. Si tu ciudad no aparece, contáctanos — es posible que podamos atenderte igualmente.`,
+    pregunta: `¿Cuánto cuesta vaciar un piso en ${ciudad}?`,
+    respuesta: `El precio depende del tamaño y el volumen de enseres. Un piso de 70–90 m² en ${ciudad} suele estar entre 250 € y 500 €. Te enviamos presupuesto gratuito en menos de 24 horas, sin visita previa en muchos casos (basta con fotos por WhatsApp).`,
   },
   {
-    pregunta: '¿Cuánto tarda en llegar un técnico?',
-    respuesta: 'Nuestro objetivo es responder en 24–48 horas laborables. Para urgencias, llama directamente al número de tu ciudad y te buscaremos hueco lo antes posible.',
+    pregunta: '¿Cuánto tiempo tarda el vaciado de un piso?',
+    respuesta: 'La mayoría de pisos se vacían en un solo día. Un piso de 3 habitaciones con mobiliario completo lleva entre 4 y 8 horas con nuestro equipo. Los locales comerciales dependen del volumen y del tipo de mobiliario.',
   },
   {
-    pregunta: '¿El presupuesto es gratuito?',
-    respuesta: 'Sí, todos nuestros presupuestos son completamente gratuitos y sin compromiso. Te lo enviamos detallado por escrito antes de comenzar ningún trabajo.',
+    pregunta: '¿El presupuesto es gratuito y sin compromiso?',
+    respuesta: `Sí, 100% gratuito y sin compromiso. En muchos casos te lo damos por teléfono o WhatsApp con fotos del inmueble. Si el trabajo lo requiere, hacemos visita previa en ${ciudad} también sin coste.`,
   },
   {
-    pregunta: '¿Qué garantía ofrecéis en los trabajos?',
-    respuesta: 'Ofrecemos garantía de 2 años en instalaciones y 1 año en reparaciones, además de la garantía de los materiales del fabricante. Todo por escrito.',
+    pregunta: '¿Qué hacéis con los muebles y objetos retirados?',
+    respuesta: 'Separamos los objetos en buen estado para donarlos a entidades sociales o canales de segunda mano. El resto se lleva a puntos de reciclaje autorizados. Podemos emitir certificado de gestión de residuos si lo necesitas.',
   },
   {
-    pregunta: '¿Trabajáis con particulares y empresas?',
-    respuesta: 'Sí. Atendemos tanto a particulares como a comunidades de vecinos, empresas e industrias. Adaptamos los horarios y el tipo de contrato a tus necesidades.',
+    pregunta: `¿Podéis vaciar un local comercial en ${ciudad}?`,
+    respuesta: `Sí. Vaciamos oficinas, tiendas, almacenes y naves industriales en ${ciudad} y comarca. Desmontamos estanterías y mobiliario fijo, y gestionamos los residuos con certificado incluido. Nos adaptamos a horarios fuera de jornada para no interrumpir tu actividad.`,
   },
   {
-    pregunta: '¿Usáis materiales de calidad?',
-    respuesta: 'Trabajamos exclusivamente con materiales de fabricantes homologados. En cada presupuesto especificamos las referencias exactas para que puedas compararlas.',
+    pregunta: '¿Podéis vaciar un piso de herencia con trámites pendientes?',
+    respuesta: 'Sí. Trabajamos habitualmente con gestorías, notarías y familiares en proceso de herencia. Podemos coordinar el vaciado con los tiempos legales y documentar lo retirado si es necesario.',
   },
   {
-    pregunta: '¿Puedo pedir cita un fin de semana?',
-    respuesta: 'Disponemos de servicio de urgencias los fines de semana y festivos. Para trabajos ordinarios pedimos cita previa con al menos 24 horas de antelación.',
+    pregunta: '¿Recogéis muebles sueltos sin necesidad de vaciar el piso entero?',
+    respuesta: 'Sí. Si solo necesitas retirar un sofá, una cama, armarios o electrodomésticos, subimos hasta tu piso a recogerlos. El precio se calcula por volumen y en muchos casos podemos atenderte el mismo día.',
   },
   {
-    pregunta: '¿Qué ocurre si hay algún problema tras el trabajo?',
-    respuesta: 'Basta con que contactes con nosotros. Cubrimos cualquier incidencia relacionada con el trabajo realizado dentro del periodo de garantía sin coste adicional.',
+    pregunta: '¿Trabajáis en fines de semana?',
+    respuesta: 'Sí, disponemos de servicio en fines de semana con cita previa. Consulta disponibilidad al solicitar el presupuesto.',
   },
 ];
 ---
@@ -45,10 +47,10 @@ const faqs = [
 
   <div class="page-header">
     <div class="container">
-      <span class="eyebrow">Preguntas frecuentes</span>
-      <h1>Resolvemos tus dudas</h1>
+      <span class="eyebrow">Preguntas frecuentes · {ciudad}</span>
+      <h1>Resolvemos tus dudas sobre el vaciado en {ciudad}</h1>
       <p class="page-header-sub">
-        Todo lo que necesitas saber antes de contratar nuestros servicios.
+        Todo lo que necesitas saber antes de contratar nuestros servicios de vaciado y limpieza en {ciudad}.
         ¿No encuentras tu pregunta? <a href="/contacto">Escríbenos directamente</a>.
       </p>
     </div>
@@ -56,7 +58,7 @@ const faqs = [
 
   <section class="page-section" aria-labelledby="faq-lista-heading">
     <div class="container">
-      <h2 id="faq-lista-heading" class="faq-section-heading">Todas las preguntas frecuentes</h2>
+      <h2 id="faq-lista-heading" class="faq-section-heading">Preguntas frecuentes sobre vaciado en {ciudad}</h2>
       <div class="faq-list">
         {faqs.map((faq, i) => (
           <details class="faq-item" open={i === 0 || undefined}>
