@@ -24,7 +24,9 @@ export const siteConfig = {
   phone:    '+34 633 75 96 49',
   email:    'seoexpertsslu@gmail.com',
   whatsapp: '34633759649',
-  web:      'https://vaciados-rubi.vercel.app',
+  // import.meta.env.SITE lee el campo `site` de astro.config.mjs,
+  // que a su vez lee process.env.PUBLIC_SITE_URL del dashboard de la plataforma.
+  web: import.meta.env.SITE || 'https://vaciados-rubi.vercel.app',
 
   // ── Horario ───────────────────────────────────────────
   horario:      'Mo-Fr 09:00-18:00',
