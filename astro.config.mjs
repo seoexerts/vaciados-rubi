@@ -5,7 +5,7 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   output: 'static',
-  site: 'https://vaciados-rubi.netlify.app',
+  site: 'https://vaciados-rubi.vercel.app',
   integrations: [
     sitemap({
       changefreq: 'weekly',

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://vaciados-rubi.netlify.app/sitemap-index.xml
+Sitemap: https://vaciados-rubi.vercel.app/sitemap-index.xml

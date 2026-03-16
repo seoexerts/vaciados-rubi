@@ -24,7 +24,7 @@ export const siteConfig = {
   phone:    '+34 633 75 96 49',
   email:    'seoexpertsslu@gmail.com',
   whatsapp: '34633759649',
-  web:      'https://vaciados-rubi.netlify.app',
+  web:      'https://vaciados-rubi.vercel.app',
 
   // ── Horario ───────────────────────────────────────────
   horario:      'Mo-Fr 09:00-18:00',
